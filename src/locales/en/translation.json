@@ -1,0 +1,416 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "hackDetails": "Attack Details",
+    "aboutBybit": "About Bybit",
+    "hackerProfile": "Hacker Profile",
+    "stolenAssets": "Stolen Assets"
+  },
+  "home": {
+    "title": "The Bybit Exchange Hack",
+    "subtitle": "An in-depth analysis of one of the most significant cryptocurrency exchange security breaches in history",
+    "viewHackDetails": "Attack Details",
+    "viewStolenAssets": "Check Hacker Profile",
+    "whatHappened": "What Happened?",
+    "whatHappenedDesc1": "On February 21, 2025, Bybit, one of the world's largest cryptocurrency exchanges, experienced a significant security breach. Hackers gained unauthorized access to several cold wallets, resulting in the theft of digital assets worth approximately $1.5 billion in ether (ETH).",
+    "whatHappenedDesc2": "The attack appears to have targeted the exchange's private keys through a sophisticated social engineering campaign against cold wallet signers, leading them to sign malicious transactions that replaced the Safe's multi-signature wallet implementation contract with a malicious one.",
+    "fullDetails": "Full Details",
+    "aboutBybit": "About Bybit",
+    "aboutBybitDesc1": "Bybit is a cryptocurrency exchange established in March 2018 and registered in the British Virgin Islands. It has grown to become one of the largest cryptocurrency derivatives exchanges globally, offering a range of trading products.",
+    "aboutBybitDesc2": "The exchange has a daily trading volume in the billions of dollars and serves millions of customers worldwide, with a focus on platform stability, liquidity, and user experience.",
+    "learnMore": "Learn More",
+    "hackTimeline": "Hack Timeline",
+    "preAttack": "Pre-Attack",
+    "reconPhase": "Reconnaissance Phase",
+    "reconPhaseDesc": "The threat actors conducted extensive reconnaissance on Bybit's infrastructure and employees, gathering information for the upcoming attack, with particular focus on cold wallet signers who would become targets of their social engineering tactics.",
+    "initialBreach": "Initial Breach",
+    "securityCompromise": "Security Compromise",
+    "securityCompromiseDesc": "Attackers gained initial access through sophisticated social engineering tactics targeting cold wallet signers, leading them to sign malicious transactions that compromised the multi-signature wallet implementation.",
+    "attackExecution": "Attack Execution",
+    "assetTheft": "Asset Theft",
+    "assetTheftDesc": "With access to compromised wallet infrastructure, the attackers initiated multiple unauthorized transactions, transferring approximately 401,000 ETH (worth nearly $1.5 billion) from Bybit's Ethereum cold wallet to attacker-controlled addresses.",
+    "postBreach": "Post-Breach",
+    "discoveryResponse": "Discovery & Response",
+    "discoveryResponseDesc": "Bybit detected the unusual transactions and implemented emergency protocols, including collaborating with industry experts like Chainalysis and launching a recovery bounty program offering up to 10% of the recovered amount.",
+    "impactAnalysis": "Impact Analysis",
+    "financialImpact": "Financial Impact",
+    "financialImpactDesc1": "The hack resulted in the theft of approximately $1.5 billion worth of ether (401,000 ETH), making it the largest digital heist in the history of cryptocurrency.",
+    "financialImpactDesc2": "Detailed blockchain analysis has tracked the movement of these funds, with approximately $40 million already frozen through collaboration with industry partners as attackers attempt to launder the stolen assets through token swaps, cross-chain bridges, and decentralized exchanges.",
+    "viewAssetData": "View Asset Data",
+    "hackerProfile": "Hacker Profile",
+    "hackerProfileDesc1": "Analysis of the attack methodology and subsequent behavior suggests links to state-sponsored actors from the Democratic People's Republic of Korea (DPRK), based on the tactics, techniques, and procedures used.",
+    "hackerProfileDesc2": "The techniques used bear similarities to attacks attributed to DPRK-affiliated hackers, including the consolidation of funds in addresses holding assets from other known DPRK-linked attacks.",
+    "hackerAnalysis": "Hacker Analysis"
+  },
+  "hackDetails": {
+    "title": "Bybit Attack Details",
+    "subtitle": "A technical deep dive into the February 2025 breach that resulted in a $1.5 billion theft",
+    "attackOverviewTitle": "Attack Overview",
+    "attackOverviewHighlight": "Attack Overview",
+    "attackDesc1": "On February 21, 2025, Bybit, one of the world's largest cryptocurrency exchanges, experienced the largest crypto heist in history. Attackers gained unauthorized access to Bybit's Ethereum cold wallet, resulting in the theft of approximately 401,000 ETH valued at nearly $1.5 billion.",
+    "attackDesc2": "Unlike previous exchange hacks that exploited software vulnerabilities, the Bybit breach involved a sophisticated supply chain attack targeting the Safe{Wallet} infrastructure combined with an elaborate social engineering campaign against cold wallet signers, leading them to sign malicious transactions that replaced the multi-signature wallet implementation contract with a malicious one.",
+    "keyInsightTitle": "Key Insight",
+    "keyInsightDesc": "The FBI has officially attributed this attack to North Korea's Lazarus Group, a state-sponsored hacking collective. The attack demonstrates a significant evolution in their capabilities, particularly in the speed and scale of post-attack fund laundering, where they moved over $160 million within just 48 hours of the theft.",
+    "timelineTitle": "Attack Timeline",
+    "timelineDesc": "The attack unfolded in several distinct phases, following tactics consistent with previous operations attributed to North Korean state-sponsored actors:",
+    "timeline": {
+      "phase1": {
+        "title": "Supply Chain Compromise (Pre-attack): ",
+        "desc": "Attackers infiltrated the Safe{Wallet} infrastructure by compromising a developer's machine, allowing them to inject malicious code into the wallet interface that Bybit used for managing its cold storage."
+      },
+      "phase2": {
+        "title": "Social Engineering Campaign: ",
+        "desc": "Using the compromised interface, attackers executed a sophisticated phishing campaign targeting Bybit's wallet signers, presenting seemingly legitimate transactions that contained embedded malicious code."
+      },
+      "phase3": {
+        "title": "Contract Replacement: ",
+        "desc": "With the obtained signatures, attackers replaced Bybit's multi-signature wallet implementation contract with a malicious version that granted them full control over the wallet."
+      },
+      "phase4": {
+        "title": "Asset Exfiltration: ",
+        "desc": "On February 21, 2025, during what appeared to be a routine transfer from cold to warm wallets, attackers drained approximately 401,000 ETH (valued at $1.5 billion) through the malicious contract."
+      },
+      "phase5": {
+        "title": "Discovery: ",
+        "desc": "Bybit detected the unauthorized transactions approximately 30 minutes after the final signature was provided, by which time the funds had already been transferred to attacker-controlled addresses."
+      },
+      "phase6": {
+        "title": "Response & Recovery Efforts: ",
+        "desc": "Bybit immediately implemented emergency protocols, secured replacement funds worth 447,000 ETH from firms like Galaxy Digital and Wintermute within 72 hours, and launched a bounty program offering up to 10% for recovered assets."
+      }
+    },
+    "technicalBreakdownTitle": "Technical Breakdown",
+    "technicalBreakdownHighlight": "Technical Breakdown",
+    "attackVectorsTitle": "Attack Vectors",
+    "attackVectorsDesc": "Based on analysis from blockchain intelligence firms including Chainalysis, TRM Labs, and Elliptic, the following primary attack vectors have been identified:",
+    "attackVectors": {
+      "vector1": {
+        "title": "Supply Chain Attack: ",
+        "desc": "The attackers compromised the Safe{Wallet} infrastructure, allowing them to inject malicious code into the legitimate wallet interface used by Bybit."
+      },
+      "vector2": {
+        "title": "Social Engineering: ",
+        "desc": "Cold wallet signers were presented with transactions that appeared legitimate on the compromised interface but contained hidden malicious code. According to Bybit's CEO, the transaction appeared as 'business as usual' with a familiar URL."
+      },
+      "vector3": {
+        "title": "Contract Vulnerability: ",
+        "desc": "The attackers exploited the multi-signature authorization process to replace the wallet implementation contract, effectively giving them full control over the funds without needing to compromise the actual private keys."
+      },
+      "vector4": {
+        "title": "Timing Exploitation: ",
+        "desc": "The attack was executed during a routine wallet maintenance operation that Bybit performs every 2-3 weeks, allowing the malicious transaction to blend with expected activity."
+      }
+    },
+    "attackFlowTitle": "Attack Flow Diagram",
+    "diagramCaption": "Flow diagram showing how attackers moved from initial compromise to fund extraction",
+    "compromisedAddressesTitle": "Compromised Addresses",
+    "compromisedAddressesDesc": "The following addresses were involved in the initial theft, as identified by blockchain forensics teams:",
+    "transactionExample": "Bybit's Multisig Cold Wallet (Victim): 0x1db92e2eebc8e0c075a02bea49a2935bcd2dfcf4\nAttacker's Initial Address: 0x0fa09c3a328792253f8dee7116848723b72a6d2e\nMalicious Implementation Contract: 0xbdd077f651ebe7f7b3ce16fe5f2b025be2969516\nAttack Contract Used in Delegate Call: 0x96221423681A6d52E184D440a8eFCEbB105C7242",
+    "transactionExampleDesc": "The initial exploit transaction (0xb61413c495fdad6114a7aa863a00b2e3c28945979a10885b12b30316ea9f072c) drained 401,346 ETH from Bybit's cold wallet in a single operation, representing one of the largest single-transaction thefts in cryptocurrency history.",
+    "financialImpactTitle": "Financial Impact",
+    "financialImpactHighlight": "Financial Impact",
+    "financialImpactDesc1": "The theft of 401,000 ETH (approximately $1.5 billion) from Bybit represents the largest cryptocurrency heist in history, surpassing previous record holders like the 2022 Ronin Bridge hack ($615 million) and the combined North Korean crypto thefts of 2024 ($1.34 billion).",
+    "financialImpactDesc2": "Within hours of the hack becoming public, Bybit experienced a surge in withdrawal requests, with CEO Ben Zhou reporting over 350,000 withdrawal requests from concerned users. Despite this pressure, Bybit secured emergency funding from industry partners to ensure all customer assets remained fully backed.",
+    "warningTitle": "Market Impact",
+    "warningDesc": "The price of Ethereum dropped by nearly 4% following news of the hack, though it largely recovered within 24 hours. The incident caused temporary volatility across major cryptocurrencies as market participants assessed the implications for broader exchange security.",
+    "marketImpactTitle": "Bybit's Financial Response",
+    "marketImpactDesc": "Bybit has confirmed it remains solvent despite the hack, with CEO Ben Zhou stating that the company holds $20 billion in customer assets and can cover any unrecovered funds itself or through loans from partners. Within 72 hours of the breach, Bybit secured approximately 447,000 ETH from firms including Galaxy Digital, FalconX, and Wintermute to ensure full asset backing.",
+    "recoveryEffortsTitle": "Recovery Efforts",
+    "recoveryEffortsDesc": "Bybit has implemented multiple strategies to trace and recover the stolen funds:",
+    "recoveryEfforts": {
+      "effort1": "Launched a bounty program offering 10% of any recovered funds, with potential rewards of up to $140 million if all assets are retrieved.",
+      "effort2": "Collaborated with blockchain analytics firms including Chainalysis, TRM Labs, and Elliptic to trace the movement of stolen assets across the blockchain.",
+      "effort3": "Engaged with centralized exchanges and DeFi platforms to flag and freeze any identified stolen funds, successfully freezing approximately $40 million within the first 24 hours.",
+      "effort4": "Coordinated with law enforcement agencies, including the FBI, which officially attributed the attack to North Korean threat actors."
+    },
+    "launderingActivityTitle": "Laundering Activity",
+    "launderingActivityHighlight": "Laundering Activity",
+    "launderingActivityDesc": "Following the theft, attackers began an unprecedented laundering operation, moving stolen funds at a pace that has shocked blockchain analysts. Within just 48 hours, they moved over $160 million through various channels—an amount that would have been 'unimaginable to move this quickly just a year ago,' according to Ari Redbord, Global Head of Policy at TRM Labs.",
+    "fundMovementTitle": "Pattern of Fund Movement",
+    "fundMovementDesc": "The stolen funds have been laundered through a systematic and likely automated process:",
+    "fundMovement": {
+      "step1": {
+        "title": "Initial Distribution: ",
+        "desc": "Funds were transferred from the attacker's original wallet in precise tranches of exactly 10,000 ETH each, distributed across 40 different transactions within approximately one hour of the theft."
+      },
+      "step2": {
+        "title": "Conversion to Other Cryptocurrencies: ",
+        "desc": "Portions of the stolen Ethereum were converted to Bitcoin and other digital currencies to obscure their origin and facilitate movement across different blockchain networks."
+      },
+      "step3": {
+        "title": "Utilization of Mixing Services: ",
+        "desc": "Over 5,000 ETH were routed through the eXch mixer to mask wallet addresses and blend transactions, further complicating the tracking of funds."
+      },
+      "step4": {
+        "title": "Cross-Chain Movement: ",
+        "desc": "Laundered funds were moved through cross-chain bridge protocols like ChainFlip, where they were converted to Bitcoin, making tracing more difficult across multiple blockchain platforms."
+      }
+    },
+    "noteTitle": "Scale of Contamination",
+    "noteDesc": "According to blockchain analysis, within just seven degrees of separation from the original attacker's wallet, over 150,000 wallets have been implicated in the dissemination of the stolen funds. However, approximately one-third of the original 401,000 ETH still remains in level-one wallets directly connected to the attacker's address.",
+    "lessonsLearnedTitle": "Lessons Learned",
+    "lessonsLearnedHighlight": "Lessons Learned",
+    "lessonsLearnedDesc": "The Bybit hack represents a watershed moment for cryptocurrency security, demonstrating the evolving sophistication of state-sponsored actors and highlighting critical vulnerabilities in current security practices even at top-tier exchanges.",
+    "industryImplicationsTitle": "Industry Implications",
+    "industryImplicationsDesc": "Following the Bybit hack, several major exchanges announced security audits and enhancements to their infrastructure. The incident has accelerated industry-wide reevaluation of cold wallet security practices, particularly around multi-signature authorization systems and the third-party tools used to manage them.",
+    "securityRecommendationsTitle": "Security Recommendations",
+    "securityRecommendationsDesc": "Based on analysis of the attack, security experts recommend the following measures to prevent similar breaches:",
+    "securityRecommendations": {
+      "rec1": {
+        "title": "Enhanced Verification Procedures: ",
+        "desc": "Implement additional verification steps for high-value transactions, including out-of-band confirmation channels not connected to the primary transaction interface."
+      },
+      "rec2": {
+        "title": "Supply Chain Security: ",
+        "desc": "Regularly audit third-party tools and infrastructure used in wallet management, including code reviews and integrity validation of wallet interfaces before use."
+      },
+      "rec3": {
+        "title": "Transaction Simulation: ",
+        "desc": "Simulate and review the expected outcome of significant transactions on test networks before execution on mainnet."
+      },
+      "rec4": {
+        "title": "Address Whitelisting: ",
+        "desc": "Implement mandatory address whitelisting with time-locked approval periods for new destination addresses."
+      },
+      "rec5": {
+        "title": "Automated Transaction Monitoring: ",
+        "desc": "Deploy real-time blockchain analytics to detect and flag suspicious transaction patterns, enabling faster response to potential breaches."
+      }
+    },
+    "bybitResponseQuote": "We take full responsibility for this security incident and are working around the clock to recover funds and improve our security infrastructure. No Bybit user will lose assets as a result of this incident. Bybit is determined to rise above the setback and fundamentally transform our security infrastructure, improve liquidity, and be a steadfast partner to our friends in the crypto community.",
+    "bybitCEO": "Bybit Co-founder and CEO",
+    "tabOverview": "Overview",
+    "tabAnalysis": "Financial Analysis",
+    "tabReports": "Detailed Reports",
+    "pdfReportsTitle": "Detailed Analysis Reports",
+    "pdfReportsHighlight": "Detailed Analysis Reports",
+    "pdfReportsDesc": "Access the full detailed analysis reports of the Bybit hack below. These reports provide comprehensive information about the attack vectors, technical details, and financial impact.",
+    "incidentReportTitle": "Incident Report",
+    "interimReportTitle": "Interim Analysis",
+    "loadingPdf": "Loading PDF...",
+    "errorLoadingPdf": "Error loading PDF. Please try again later.",
+    "previousPage": "Previous",
+    "nextPage": "Next",
+    "pageInfo": "Page {{pageNumber}} of {{numPages}}"
+  },
+  "bybitInfo": {
+    "title": "About Bybit",
+    "subtitle": "Background information on one of the world's largest cryptocurrency exchanges",
+    "companyOverviewTitle": "Company Over",
+    "companyOverviewTitleHighlight": "view",
+    "companyDesc1": "Bybit is a cryptocurrency derivatives exchange established in March 2018. Headquartered in Singapore and registered in the British Virgin Islands, the exchange has rapidly grown to become one of the most significant players in the cryptocurrency trading ecosystem.",
+    "companyDesc2": "As of 2025, Bybit serves millions of users worldwide and consistently ranks among the top cryptocurrency exchanges by trading volume. The platform specializes in cryptocurrency derivatives trading, offering perpetual contracts, futures, options, and spot trading for a wide range of cryptocurrencies.",
+    "userStat": "5M+",
+    "userStatLabel": "Registered Users",
+    "volumeStat": "$7.8B",
+    "volumeStatLabel": "Daily Trading Volume",
+    "cryptoStat": "100+",
+    "cryptoStatLabel": "Supported Cryptocurrencies",
+    "leadershipTitle": "Leadership",
+    "leadershipDesc1": "Bybit was founded by Ben Zhou, who serves as the CEO. Prior to founding Bybit, Zhou worked at XM, a forex and CFD trading company. The exchange's leadership team includes executives with backgrounds in traditional finance, technology, and blockchain industries.",
+    "leadershipDesc2": "The company maintains a relatively private profile regarding its organizational structure, but has expanded its team significantly as it has grown, with offices in various locations around the world.",
+    "evolutionTitle": "Evolution & Growth",
+    "journeyTitle": "Bybit's Journey",
+    "journeyDesc": "Since its launch in 2018, Bybit has experienced remarkable growth, expanding its product offerings and user base significantly. The company emerged during a period of increased interest in cryptocurrency derivatives trading and distinguished itself through a focus on platform stability, liquidity, and user experience.",
+    "timeline": {
+      "event1": {
+        "date": "March 2018",
+        "title": "Bybit Founded",
+        "description": "Exchange launched with a focus on cryptocurrency derivatives trading."
+      },
+      "event2": {
+        "date": "2019",
+        "title": "Product Expansion",
+        "description": "Introduction of additional trading pairs and improved platform features."
+      },
+      "event3": {
+        "date": "2020",
+        "title": "Market Growth",
+        "description": "Significant increase in trading volume and user base during the cryptocurrency market expansion."
+      },
+      "event4": {
+        "date": "2021",
+        "title": "Feature Expansion",
+        "description": "Introduction of spot trading, more derivatives products, and additional services."
+      },
+      "event5": {
+        "date": "2022-2024",
+        "title": "Global Expansion",
+        "description": "Continued international growth and regulatory compliance efforts in various jurisdictions."
+      }
+    },
+    "marketPositionTitle": "Market Position",
+    "marketPositionDesc": "Prior to the security incident, Bybit had established itself as a top-tier cryptocurrency exchange, particularly known for:",
+    "features": {
+      "trading": {
+        "title": "Trading Infrastructure:",
+        "description": "Bybit's matching engine is capable of processing 100,000 transactions per second, providing a smooth trading experience even during periods of high market volatility."
+      },
+      "liquidity": {
+        "title": "Liquidity:",
+        "description": "The exchange maintained deep order books for its most popular trading pairs, reducing slippage for traders."
+      },
+      "interface": {
+        "title": "User Interface:",
+        "description": "Often praised for its intuitive trading platform that caters to both beginner and advanced traders."
+      },
+      "support": {
+        "title": "Customer Support:",
+        "description": "24/7 multilingual customer service across various channels."
+      }
+    },
+    "analystQuote": "Bybit has demonstrated remarkable growth in the cryptocurrency exchange market by focusing on derivatives trading excellence and platform stability. Their journey represents both the opportunities and challenges of operating in the rapidly evolving digital asset space.",
+    "analystAttribution": "CryptoAnalyticsHub Research, 2024",
+    "securityTitle": "Security Posture & Practices",
+    "securityInfraTitle": "Pre-Incident Security Infrastructure",
+    "securityInfraDesc": "Prior to the hack, Bybit had implemented various security measures to protect user funds and platform integrity:",
+    "securityMeasures": {
+      "item1": "Multi-signature wallets requiring multiple approvals for transactions",
+      "item2": "Cold storage for the majority of user funds (estimated at 95%)",
+      "item3": "Regular security audits by third-party cybersecurity firms",
+      "item4": "Advanced monitoring systems for detecting suspicious activities",
+      "item5": "Two-factor authentication (2FA) for all user accounts"
+    },
+    "regulatoryTitle": "Regulatory Compliance",
+    "regulatoryDesc": "Bybit has navigated the complex and evolving regulatory landscape for cryptocurrency exchanges by:",
+    "regulatoryCompliance": {
+      "item1": "Implementing Know Your Customer (KYC) and Anti-Money Laundering (AML) procedures",
+      "item2": "Restricting service in jurisdictions with explicit bans on cryptocurrency trading",
+      "item3": "Engaging with regulators in various countries to ensure compliance with local laws",
+      "item4": "Obtaining licenses and registrations in certain jurisdictions"
+    },
+    "industryRankTitle": "Industry Ranking & Reputation",
+    "industryRankDesc": "Before the security incident, Bybit had established a strong reputation within the cryptocurrency community:",
+    "industryRank": {
+      "item1": "Consistently ranked among the top 5-10 exchanges by trading volume",
+      "item2": "Known for reliable platform performance even during extreme market volatility",
+      "item3": "Active community engagement and educational initiatives",
+      "item4": "Sponsorships in sports and esports, including partnerships with Formula One teams"
+    },
+    "securityIncidentDesc": "The February 2025 security breach represents a significant challenge to Bybit's reputation and raises questions about the efficacy of their security measures, despite their previous positive standing in the industry."
+  },
+  "hackerProfile": {
+    "title": "Hacker Profile",
+    "subtitle": "Analysis of the threat actors behind the Bybit exchange breach",
+    "threatActorAnalysis": "Threat Actor Analysis",
+    "threatActorAnalysisDesc": "Based on forensic analysis of on-chain activities, transaction patterns, and technical methodology, security researchers have developed a profile that strongly suggests the involvement of state-sponsored actors from the Democratic People's Republic of Korea (DPRK), specifically the Lazarus Group. The tactics, techniques, and procedures (TTPs) used are consistent with previous attacks attributed to North Korean hacking groups, including recent attacks on Radiant Capital and WazirX.",
+    "note": "Note",
+    "noteDesc": "This analysis is based on evidence from blockchain forensics firms like Chainalysis and cybersecurity researchers. The consolidation of stolen funds in addresses holding assets from other known DPRK-linked attacks provides strong evidence for attribution, though as with all cybersecurity incidents, findings may evolve as more information becomes available.",
+    "technicalSophistication": "Technical Sophistication Assessment",
+    "sophisticationDesc": "The threat actors demonstrated an exceptional level of technical expertise, consistent with an advanced persistent threat (APT) group with state backing:",
+    "attribute": "Attribute",
+    "assessment": "Assessment",
+    "technicalExpertise": "Technical Expertise",
+    "expertiseDesc": "Advanced - Demonstrated deep knowledge of cold wallet infrastructure, multi-signature authorization systems, and blockchain transaction mechanisms, with particular expertise in 'blind signing' attacks as seen in the Radiant Capital and WazirX breaches",
+    "operationalSecurity": "Operational Security",
+    "securityDesc": "Sophisticated - Employed multiple techniques to obfuscate identity and asset movement, consistent with DPRK-affiliated operations",
+    "resources": "Resources",
+    "resourcesDesc": "Substantial - Operation required significant planning, time investment, and team members with specialized skills in both social engineering and technical exploitation",
+    "motivation": "Motivation",
+    "motivationDesc": "Financial - Consistent with DPRK's documented pattern of cryptocurrency theft to evade sanctions and fund state operations, with total thefts in 2024 exceeding $659 million across multiple exchanges",
+    "tacticsTitle": "Tactics, Techniques & ",
+    "tacticsTitleHighlight": "Procedures",
+    "tacticsDesc": "Analysis of the Bybit hack reveals a sophisticated operation using advanced tactics consistent with North Korean state-sponsored groups, particularly the Lazarus Group:",
+    "reconTitle": "Reconnaissance",
+    "reconDesc": "Extensive pre-attack research into Bybit's infrastructure, wallet architecture, and key personnel with access to cold wallet signing privileges, similar to the approach used in the Radiant Capital attack of October 2023",
+    "accessTitle": "Initial Access",
+    "accessDesc": "Social engineering targeting cold wallet signers, tricking them into signing malicious transactions by displaying legitimate transaction data on the front-end while injecting malicious code - a 'blind signing' technique also used in the $50 million Radiant Capital hack and the $235 million WazirX breach",
+    "exfilTitle": "Asset Exfiltration",
+    "exfilDesc": "Precise extraction of 401,000 ETH through multiple unauthorized transactions, timed to maximize value and minimize detection chances, with sophisticated malware intercepting approvals and relaying malicious transactions",
+    "launderingTitle": "Fund Laundering",
+    "launderingDesc": "Sophisticated laundering through mixers, cross-chain bridges, and conversion to privacy coins, following patterns seen in previous DPRK cyber operations, with funds consolidated from various hacks and transferred through intermediary addresses to P2P exchanges",
+    "attributionTitle": "Attribution Analysis",
+    "attributionDesc1": "The tactics and techniques used in the Bybit hack closely match those observed in previous attacks attributed to North Korean state-sponsored hackers, particularly those affiliated with the Reconnaissance General Bureau (RGB). A joint statement from the United States, Japan, and South Korea has confirmed DPRK-linked actors were responsible for multiple crypto thefts in 2024, including the WazirX hack.",
+    "attributionDesc2": "Based on analysis by leading blockchain intelligence firms, the following similarity scores have been calculated by comparing TTP patterns with known threat actors:",
+    "similarityTitle": "TTP Similarity to Known Threat Actors",
+    "similarityFooter": "Source: Chainalysis and Elliptic analysis, February 2025",
+    "disclaimer": "Attribution Disclaimer:",
+    "disclaimerDesc": "While evidence strongly points to DPRK-affiliated actors, definitive attribution in cyberspace is challenging. This assessment represents the consensus view of multiple intelligence firms and may be updated as new evidence emerges.",
+    
+    "recentAttacksTitle": "Recent Notable Attacks",
+    "recentAttacksTitleHighlight": "by the Same Actors",
+    "recentAttacksDesc": "The Bybit hack follows a pattern of sophisticated attacks attributed to the Lazarus Group, with two recent high-profile incidents showing striking similarities in methodology:",
+    
+    "radiantAttackTitle": "Radiant Capital Hack (October 2023)",
+    "radiantAttackDesc": "On October 16, 2023, Radiant Capital suffered a security breach resulting in approximately $50 million in losses. The attack compromised three trusted developers who used hardware wallets, with attackers employing sophisticated malware to inject malicious transactions while displaying legitimate transaction data on the front-end. Despite rigorous security procedures, the breach was undetectable during manual reviews as the malware intercepted transaction approvals and relayed malicious transactions instead.",
+    "radiantAttackMetrics": "Attack Value: $50 million | Date: October 16, 2023 | Chains Affected: Arbitrum and BSC",
+    
+    "wazirxAttackTitle": "WazirX Breach (July 2024)",
+    "wazirxAttackDesc": "In July 2024, WazirX exchange suffered a $235 million breach attributed to the Lazarus Group. The attack exploited 'blind signing' vulnerabilities in multi-signature Ethereum transactions. Blind signing occurs when a hardware wallet does not fully display transaction details (such as destination addresses and token specifics) for verification. The attackers potentially compromised the custody provider's infrastructure, allowing them to display seemingly legitimate transaction information while executing malicious code. The attack succeeded despite multiple signers being geographically distributed and using hardware wallets with standard security measures.",
+    "wazirxAttackMetrics": "Attack Value: $235 million | Date: July 18, 2024 | Vulnerability: Blind Signing in Multi-signature Wallet",
+    
+    "attackComparisonTitle": "Pattern Analysis",
+    "attackComparisonDesc": "Both the Radiant and WazirX attacks share key similarities with the Bybit breach, including: exploitation of multi-signature wallets, use of 'blind signing' vulnerabilities, sophisticated malware that presents legitimate transaction information while executing malicious code, and bypassing of standard security measures. These patterns strongly reinforce attribution to the Lazarus Group and highlight their evolving technical sophistication in targeting cryptocurrency platforms."
+  },
+  "assetData": {
+    "title": "Stolen Assets Data",
+    "subtitle": "Analysis and visualization of funds taken during the Bybit hack",
+    "tabs": {
+      "overview": "Overview",
+      "movement": "Fund Movement",
+      "addresses": "Key Addresses"
+    },
+    "overview": {
+      "description": "The Bybit hack resulted in the theft of approximately 401,000 ETH (valued at nearly $1.5 billion) on February 21, 2025. Below is a breakdown of the stolen assets, their movement, and recovery efforts to date, including approximately $40 million that has been frozen through industry collaboration.",
+      "totalValueStolen": "Total Value Stolen (USD)",
+      "ethAmount": "ETH Amount",
+      "recoveredSoFar": "Recovered So Far",
+      "distributionTitle": "Distribution of Stolen Assets by Value",
+      "chartDescription": "Fig 1. Breakdown of stolen assets by cryptocurrency type",
+      "dataSource": "Data Source",
+      "dataSourceDesc": "This analysis is based on blockchain data processed through Dune Analytics. You can view the complete dataset",
+      "here": "here"
+    },
+    "movement": {
+      "description": "After the initial theft, stolen funds were moved through a complex series of transactions designed to obfuscate their origin. This tab visualizes the movement of these assets over time.",
+      "remainingFundsTitle": "Remaining Funds Over Time",
+      "chartDescription": "Fig 2. Percentage of stolen funds remaining in known attacker wallets over time",
+      "laundering": "Laundering Attempts",
+      "launderingDesc": "Blockchain analysis shows attackers using mixing services, cross-chain bridges, and decentralized exchanges to convert stolen funds into other assets, making them harder to track.",
+      "destinationTitle": "Transaction Activity by Attacker Wallet",
+      "destinationDesc": "Fig 3. Number of outgoing transactions from primary attacker wallets"
+    },
+    "addresses": {
+      "description": "The table below lists the primary addresses involved in the attack, including the initial withdrawal addresses and subsequent laundering wallets.",
+      "address": "Address",
+      "role": "Role",
+      "amount": "Amount",
+      "status": "Status",
+      "sourceWallet": "Source Wallet",
+      "attackerWallet": "Attacker Wallet",
+      "mixerService": "Mixer Service",
+      "exchangeDeposit": "Exchange Deposit",
+      "compromised": "Compromised",
+      "tracked": "Tracked",
+      "blacklisted": "Blacklisted",
+      "frozen": "Frozen",
+      "fullListInfo": "Note: These addresses are being actively monitored by blockchain analytics firms and law enforcement. Any exchanges receiving funds from these addresses are being notified."
+    },
+    "onChainAnalysis": {
+      "title": "On-Chain Anal",
+      "titleHighlight": "ysis",
+      "description": "Blockchain analytics firms have been tracking the movement of stolen funds since the hack occurred. By analyzing transaction patterns and address clustering, researchers have been able to follow the flow of assets as attackers attempt to launder them.",
+      "keyFindings": "Key Findings",
+      "finding1": "Approximately 30% of stolen funds have been sent to known cryptocurrency mixers",
+      "finding2": "Around $100 million worth has been converted to privacy coins like Monero",
+      "finding3": "Several attempts have been made to deposit funds at centralized exchanges, most of which have been blocked",
+      "finding4": "Cross-chain bridges have been utilized to move assets between different blockchains",
+      "finding5": "Some funds remain dormant in attacker-controlled wallets, possibly waiting for decreased scrutiny",
+      "updateInfo": "This data is updated regularly as new on-chain movements are detected. Last updated: {{date}}",
+      "dashboardInfo": "For the most current data, check the",
+      "dashboardLink": "Dune Analytics dashboard"
+    }
+  },
+  "footer": {
+    "bybitHack": "Bybit Hack",
+    "exchangeInfo": "Exchange Info",
+    "resources": "Resources",
+    "security": "Security",
+    "copyright": "© 2025 Bybit Hack Analysis. This is an educational site and not affiliated with Bybit.",
+    "disclaimer": "All information is provided for educational purposes only."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+} 

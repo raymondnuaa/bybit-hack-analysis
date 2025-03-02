@@ -1,0 +1,434 @@
+{
+  "nav": {
+    "overview": "概览",
+    "hackDetails": "攻击详情",
+    "aboutBybit": "关于Bybit",
+    "hackerProfile": "黑客档案",
+    "stolenAssets": "被盗资产"
+  },
+  "home": {
+    "title": "Bybit交易所黑客事件",
+    "subtitle": "对历史上最重大的加密货币交易所安全漏洞之一的深入分析",
+    "viewHackDetails": "攻击详情",
+    "viewStolenAssets": "查看被盗资产",
+    "whatHappened": "发生了什么？",
+    "whatHappenedDesc1": "2025年2月21日，全球最大的加密货币交易所之一Bybit遭遇了重大安全漏洞。黑客未经授权访问了多个冷钱包，导致价值约15亿美元的以太币（ETH）被盗。",
+    "whatHappenedDesc2": "攻击似乎通过针对冷钱包签名者的复杂社会工程学活动针对交易所的私钥，导致他们签署恶意交易，将Safe的多重签名钱包实现合约替换为恶意合约。",
+    "fullDetails": "完整详情",
+    "aboutBybit": "关于Bybit",
+    "aboutBybitDesc1": "Bybit是一家成立于2018年3月并注册在英属维尔京群岛的加密货币交易所。它已成长为全球最大的加密货币衍生品交易所之一，提供多种交易产品。",
+    "aboutBybitDesc2": "该交易所每日交易量达数十亿美元，服务全球数百万客户，专注于平台稳定性、流动性和用户体验。",
+    "learnMore": "了解更多",
+    "hackTimeline": "黑客时间线",
+    "preAttack": "攻击前",
+    "reconPhase": "侦察阶段",
+    "reconPhaseDesc": "威胁行为者对Bybit的基础设施和员工进行了广泛的侦察，为即将到来的攻击收集信息，特别关注将成为社会工程学策略目标的冷钱包签名者。",
+    "initialBreach": "初始入侵",
+    "securityCompromise": "安全受损",
+    "securityCompromiseDesc": "攻击者通过针对冷钱包签名者的复杂社会工程学策略获得了初始访问权限，导致他们签署恶意交易，从而破坏了多重签名钱包的实现。",
+    "attackExecution": "攻击执行",
+    "assetTheft": "资产盗窃",
+    "assetTheftDesc": "在获得访问受损钱包基础设施的权限后，攻击者发起了多笔未经授权的交易，将约401,000个ETH（价值近15亿美元）从Bybit的以太坊冷钱包转移到攻击者控制的地址。",
+    "postBreach": "漏洞后",
+    "discoveryResponse": "发现与响应",
+    "discoveryResponseDesc": "Bybit检测到异常交易并实施了紧急协议，包括与Chainalysis等行业专家合作，并启动了一个恢复赏金计划，提供高达10%的已恢复金额作为奖励。",
+    "impactAnalysis": "影响分析",
+    "financialImpact": "财务影响",
+    "financialImpactDesc1": "黑客事件导致约15亿美元的以太币（401,000 ETH）被盗，使其成为加密货币历史上最大的数字抢劫案。",
+    "financialImpactDesc2": "详细的区块链分析已追踪这些资金的流动，通过与行业合作伙伴的合作，已有约4000万美元被冻结，而攻击者试图通过代币互换、跨链桥和去中心化交易所洗钱被盗资产。",
+    "viewAssetData": "查看资产数据",
+    "hackerProfile": "黑客画像",
+    "hackerProfileDesc1": "对攻击方法和后续行为的分析显示，基于所使用的策略、技术和程序，这与朝鲜民主主义人民共和国（DPRK）的国家支持行为者有关联。",
+    "hackerProfileDesc2": "所使用的技术与归因于朝鲜黑客的攻击有相似之处，包括在持有其他已知朝鲜相关攻击资产的地址中整合资金。",
+    "hackerAnalysis": "黑客分析"
+  },
+  "hackDetails": {
+    "title": "Bybit攻击详情",
+    "subtitle": "对2025年2月导致15亿美元被盗事件的技术深度分析",
+    "attackOverviewTitle": "攻击概",
+    "attackOverviewTitleHighlight": "述",
+    "attackDesc1": "2025年2月21日，全球最大的加密货币交易所之一Bybit遭遇了历史上最大规模的加密货币盗窃事件。攻击者获取了Bybit以太坊冷钱包的未授权访问权限，导致约401,000 ETH（价值近15亿美元）被盗。",
+    "attackDesc2": "与之前利用软件漏洞的交易所黑客攻击不同，Bybit突破涉及了针对Safe{Wallet}基础设施的复杂供应链攻击，结合了针对冷钱包签名者的精心策划的社会工程学攻击，诱导他们签署恶意交易，将多重签名钱包实现合约替换为恶意合约。",
+    "keyInsightTitle": "关键洞察",
+    "keyInsightDesc": "FBI已正式将此次攻击归因于朝鲜的Lazarus组织，这是一个国家支持的黑客集团。此次攻击展示了他们能力的显著进化，特别是在攻击后资金洗钱的速度和规模方面，他们在盗窃后仅48小时内就转移了超过1.6亿美元。",
+    "timelineTitle": "攻击时间线",
+    "timelineDesc": "攻击分为几个不同的阶段，遵循与朝鲜国家支持的行为者之前行动一致的策略：",
+    "timeline": {
+      "phase1": {
+        "title": "供应链入侵（攻击前）：",
+        "desc": "攻击者通过入侵开发人员的机器，渗透了Safe{Wallet}基础设施，使他们能够在Bybit用于管理冷存储的钱包界面中注入恶意代码。"
+      },
+      "phase2": {
+        "title": "社会工程学活动：",
+        "desc": "利用被入侵的界面，攻击者对Bybit的钱包签名者执行了复杂的钓鱼活动，呈现看似合法但包含嵌入式恶意代码的交易。"
+      },
+      "phase3": {
+        "title": "合约替换：",
+        "desc": "获得签名后，攻击者将Bybit的多重签名钱包实现合约替换为授予他们对钱包完全控制权的恶意版本。"
+      },
+      "phase4": {
+        "title": "资产转移：",
+        "desc": "2025年2月21日，在看似例行的从冷钱包到热钱包的转账过程中，攻击者通过恶意合约转移了约401,000 ETH（价值15亿美元）。"
+      },
+      "phase5": {
+        "title": "发现：",
+        "desc": "Bybit在最终签名提供后约30分钟内发现了未授权交易，但此时资金已经转移到了攻击者控制的地址。"
+      },
+      "phase6": {
+        "title": "响应与恢复努力：",
+        "desc": "Bybit立即实施紧急协议，在72小时内从Galaxy Digital和Wintermute等公司获得了价值447,000 ETH的替代资金，并推出了赏金计划，为恢复的资产提供高达10%的奖励。"
+      }
+    },
+    "technicalBreakdownTitle": "技术解",
+    "technicalBreakdownTitleHighlight": "析",
+    "attackVectorsTitle": "攻击载体",
+    "attackVectorsDesc": "基于Chainalysis、TRM Labs和Elliptic等区块链情报公司的分析，以下是已识别的主要攻击载体：",
+    "attackVectors": {
+      "vector1": {
+        "title": "供应链攻击：",
+        "desc": "攻击者入侵了Safe{Wallet}基础设施，使他们能够在Bybit使用的合法钱包界面中注入恶意代码。"
+      },
+      "vector2": {
+        "title": "社会工程学：",
+        "desc": "冷钱包签名者在被入侵的界面上看到的交易看似合法，但包含隐藏的恶意代码。根据Bybit首席执行官的说法，交易看起来是'正常业务'，网址也很熟悉。"
+      },
+      "vector3": {
+        "title": "合约漏洞：",
+        "desc": "攻击者利用多重签名授权过程替换了钱包实现合约，有效地在不需要入侵实际私钥的情况下获得了对资金的完全控制权。"
+      },
+      "vector4": {
+        "title": "时机利用：",
+        "desc": "攻击是在Bybit每2-3周执行一次的例行钱包维护操作期间执行的，使恶意交易能够与预期活动混合。"
+      }
+    },
+    "attackFlowTitle": "攻击流程图",
+    "diagramCaption": "展示攻击者如何从初始入侵到资金提取的流程图",
+    "compromisedAddressesTitle": "被入侵的地址",
+    "compromisedAddressesDesc": "以下是区块链取证团队识别的最初被盗涉及的地址：",
+    "transactionExample": "Bybit的多签冷钱包（受害者）：0x1db92e2eebc8e0c075a02bea49a2935bcd2dfcf4\n攻击者的初始地址：0x0fa09c3a328792253f8dee7116848723b72a6d2e\n恶意实现合约：0xbdd077f651ebe7f7b3ce16fe5f2b025be2969516\n委托调用中使用的攻击合约：0x96221423681A6d52E184D440a8eFCEbB105C7242",
+    "transactionExampleDesc": "初始攻击交易（0xb61413c495fdad6114a7aa863a00b2e3c28945979a10885b12b30316ea9f072c）在单次操作中从Bybit的冷钱包转移了401,346 ETH，代表了加密货币历史上最大的单笔交易盗窃之一。",
+    "financialImpactTitle": "财务影响",
+    "financialImpactDesc1": "从Bybit盗取的401,000 ETH（约15亿美元）代表了历史上最大的加密货币抢劫案，超过了之前的纪录保持者，如2022年Ronin Bridge黑客攻击（6.15亿美元）和2024年朝鲜加密货币盗窃总和（13.4亿美元）。",
+    "financialImpactDesc2": "在黑客攻击公开后的几小时内，Bybit经历了提款请求的激增，首席执行官Ben Zhou报告了来自担忧用户的超过35万份提款请求。尽管面临这种压力，Bybit从行业合作伙伴那里获得了紧急资金，确保所有客户资产仍然完全有保障。",
+    "warningTitle": "市场影响",
+    "warningDesc": "在黑客攻击消息传出后，以太坊价格下跌了近4%，但在24小时内基本恢复。该事件导致主要加密货币的临时波动，市场参与者评估了对更广泛交易所安全的影响。",
+    "marketImpactTitle": "Bybit的财务响应",
+    "marketImpactDesc": "Bybit确认尽管遭遇黑客攻击，但仍然保持偿付能力，首席执行官Ben Zhou表示，公司持有200亿美元的客户资产，可以自行或通过合作伙伴贷款覆盖任何未收回的资金。在突破后的72小时内，Bybit从Galaxy Digital、FalconX和Wintermute等公司获得了约447,000 ETH，以确保资产完全有保障。",
+    "recoveryEffortsTitle": "恢复努力",
+    "recoveryEffortsDesc": "Bybit实施了多种策略来追踪和恢复被盗资金：",
+    "recoveryEfforts": {
+      "effort1": "推出了赏金计划，为任何恢复的资金提供10%的奖励，如果所有资产都被找回，潜在奖励高达1.4亿美元。",
+      "effort2": "与Chainalysis、TRM Labs和Elliptic等区块链分析公司合作，追踪被盗资产在区块链上的移动。",
+      "effort3": "与中心化交易所和DeFi平台合作，标记和冻结任何已识别的被盗资金，在前24小时内成功冻结了约4000万美元。",
+      "effort4": "与执法机构合作，包括FBI，该机构正式将攻击归因于朝鲜威胁行为者。"
+    },
+    "launderingActivityTitle": "资金洗钱活动",
+    "launderingActivityDesc": "在盗窃之后，攻击者开始了前所未有的洗钱行动，转移被盗资金的速度震惊了区块链分析师。在短短48小时内，他们通过各种渠道转移了超过1.6亿美元——根据TRM Labs全球政策主管Ari Redbord的说法，这是'一年前不可想象的如此快速移动'的金额。",
+    "fundMovementTitle": "资金移动模式",
+    "fundMovementDesc": "被盗资金通过系统化且可能是自动化的过程进行洗钱：",
+    "fundMovement": {
+      "step1": {
+        "title": "初始分配：",
+        "desc": "资金从攻击者的原始钱包中以精确的10,000 ETH为单位进行转移，在盗窃后约一小时内通过40个不同的交易分配。"
+      },
+      "step2": {
+        "title": "转换为其他加密货币：",
+        "desc": "部分被盗以太坊被转换为比特币和其他数字货币，以掩盖其来源并促进跨不同区块链网络的移动。"
+      },
+      "step3": {
+        "title": "使用混合服务：",
+        "desc": "超过5,000 ETH通过eXch混合器路由，以掩盖钱包地址并混合交易，进一步复杂化资金追踪。"
+      },
+      "step4": {
+        "title": "跨链移动：",
+        "desc": "洗钱资金通过ChainFlip等跨链桥协议移动，在那里它们被转换为比特币，使跨多个区块链平台的追踪变得更加困难。"
+      }
+    },
+    "noteTitle": "污染规模",
+    "noteDesc": "根据区块链分析，在与原始攻击者钱包的七度分离之内，超过150,000个钱包已被牵涉到被盗资金的传播中。然而，原始401,000 ETH中约三分之一仍留在与攻击者地址直接相连的一级钱包中。",
+    "lessonsLearnedTitle": "教训与启示",
+    "lessonsLearnedDesc": "Bybit黑客攻击代表了加密货币安全的一个分水岭时刻，展示了国家支持的行为者不断发展的复杂性，并强调了即使在顶级交易所，当前安全实践中的关键漏洞。",
+    "industryImplicationsTitle": "行业影响",
+    "industryImplicationsDesc": "在Bybit黑客攻击之后，几个主要交易所宣布了安全审计并加强了基础设施。该事件加速了行业范围内对冷钱包安全实践的重新评估，特别是围绕多重签名授权系统和用于管理它们的第三方工具。",
+    "securityRecommendationsTitle": "安全建议",
+    "securityRecommendationsDesc": "基于对攻击的分析，安全专家建议采取以下措施来防止类似的突破：",
+    "securityRecommendations": {
+      "rec1": {
+        "title": "增强验证程序：",
+        "desc": "对高价值交易实施额外的验证步骤，包括与主要交易界面不相连的带外确认渠道。"
+      },
+      "rec2": {
+        "title": "供应链安全：",
+        "desc": "定期审计钱包管理中使用的第三方工具和基础设施，包括代码审查和使用前的钱包界面完整性验证。"
+      },
+      "rec3": {
+        "title": "交易模拟：",
+        "desc": "在主网执行前在测试网络上模拟并审查重要交易的预期结果。"
+      },
+      "rec4": {
+        "title": "地址白名单：",
+        "desc": "为新目标地址实施强制性地址白名单，并设置时间锁定的批准期限。"
+      },
+      "rec5": {
+        "title": "自动交易监控：",
+        "desc": "部署实时区块链分析以检测和标记可疑交易模式，使对潜在突破的响应更快。"
+      }
+    },
+    "bybitResponseQuote": "我们对这次安全事件承担全部责任，并正在日夜不停地努力恢复资金并改善我们的安全基础设施。由于这次事件，没有Bybit用户会损失资产。Bybit决心克服挫折，从根本上改变我们的安全基础设施，提高流动性，并成为加密社区朋友们的坚定伙伴。",
+    "bybitCEO": "Bybit联合创始人兼首席执行官",
+    "tabOverview": "概述",
+    "tabAnalysis": "财务分析",
+    "tabReports": "详细报告",
+    "pdfReportsTitle": "详细分析报告",
+    "pdfReportsDesc": "在下方查看Bybit黑客攻击的完整详细分析报告。这些报告提供了有关攻击载体、技术细节和财务影响的全面信息。",
+    "incidentReportTitle": "事件报告",
+    "interimReportTitle": "中期分析",
+    "loadingPdf": "正在加载PDF...",
+    "errorLoadingPdf": "加载PDF时出错。请稍后再试。",
+    "previousPage": "上一页",
+    "nextPage": "下一页",
+    "pageInfo": "页面 {{pageNumber}} / {{numPages}}",
+    "traderTraitorTitle": "TraderTraitor组织与JavaScript分析",
+    "traderTraitorDesc": "FBI正式将Bybit黑客攻击归因于朝鲜威胁行为者，特别是他们追踪的名为"TraderTraitor"的组织（也称为Jade Sleet、Slow Pisces和UNC4899）。该组织先前被指控在2024年5月从DMM Bitcoin盗取了3.08亿美元，显示出攻击加密货币交易所的模式。",
+    "traderTraitorAnalysisTitle": "TraderTraitor TTP分析",
+    "traderTraitorAnalysisDesc": "TraderTraitor行为者通常通过恶意加密货币应用程序或以工作为主题的社会工程学活动来针对Web3公司。在Bybit攻击中，该组织在盗窃前几小时注册了域名bybit-assessment[.]com，使用电子邮件地址"trevorgreer9312@gmail[.]com"——这之前已被识别为拉撒路组织使用的身份。",
+    "supplyChainTitle": "JavaScript供应链攻击详情",
+    "supplyChainDesc": "攻击源自Safe Wallet开发人员的受感染机器。app.safe.global的良性JavaScript文件在2025年2月19日UTC时间15:29:25被替换为恶意代码，专门针对Bybit的以太坊多重签名冷钱包。",
+    "maliciousCodeTitle": "简化的Safe Wallet基础设施中恶意JavaScript代码注入的表示",
+    "attackTimelineTitle": "攻击时间精准度",
+    "attackTimelineDesc": "恶意JavaScript在攻击后约两分钟内从Safe Wallet的基础设施中移除，表明攻击者对Bybit的交易时间有精确的了解，以及Safe Wallet的快速补救努力。这表明威胁行为者具有复杂的规划和监控能力。",
+    "northKoreanTitle": "朝鲜洗钱策略",
+    "northKoreanDesc": "Bybit黑客攻击符合朝鲜国家支持的加密货币盗窃更大模式。2023年，朝鲜黑客在20起事件中盗取了约6.605亿美元。到2024年，这一数字增加到47起事件中的13.4亿美元——盗窃价值增加了102.88%。单独的15亿美元Bybit黑客攻击就超过了朝鲜在整个2024年盗窃的所有资金。",
+    "dprkPatternTitle": "朝鲜加密货币盗窃模式",
+    "dprkPatternDesc": "与朝鲜有关联的行为者自2017年以来已经盗取了超过60亿美元的加密资产。他们的策略已经从简单的盗窃发展为复杂的洗钱操作，包括使用混合器、跨链桥和战略性的休眠期，以逃避检测和追踪工作。",
+    "fbiAddressesTitle": "FBI识别的地址",
+    "fbiAddressesDesc": "FBI已经识别出超过50个持有或曾经持有被盗资产的以太坊地址，这些地址由朝鲜TraderTraitor行为者操作或与之密切相关。行业合作已经导致超过4000万美元被盗资金被冻结，尽管大部分资金仍未追回。",
+    "selectedAddressesTitle": "Bybit黑客攻击中涉及的FBI识别的部分地址",
+    "supplyChainSecurityTitle": "供应链安全影响",
+    "supplyChainSecurityDesc": "Bybit黑客攻击凸显了加密货币行业中供应链安全的关键重要性。尽管Bybit自己的基础设施没有直接受到攻击，但第三方服务（Safe Wallet）中的漏洞使攻击者能够执行他们的攻击。这表明安全性只有整个技术栈中最薄弱环节那么强。",
+    "thirdPartyTitle": "第三方代码验证",
+    "thirdPartyDesc": "为第三方代码和服务实施严格的验证机制，特别是那些涉及交易签名的服务。考虑通过子资源完整性（SRI）检查为外部JavaScript资源实施内容完整性验证。",
+    "attackDesignTitle": "攻击设计与取证分析",
+    "attackDesignDesc": "攻击被设计为在Bybit的下一次交易期间激活，这发生在2025年2月21日UTC时间14:13:35。据怀疑，Safe.Global的AWS S3或CloudFront账户/API密钥可能被泄露或入侵，使攻击者能够用恶意文件替换合法的JavaScript文件。对签名者主机上Chrome浏览器缓存文件的取证分析证实了在交易签名时恶意JavaScript的存在。"
+  },
+  "bybitInfo": {
+    "title": "关于Bybit",
+    "subtitle": "全球最大加密货币交易所之一的背景信息",
+    "companyOverviewTitle": "公司概",
+    "companyOverviewTitleHighlight": "况",
+    "companyDesc1": "Bybit是一家成立于2018年3月的加密货币衍生品交易所。总部位于新加坡，在英属维尔京群岛注册，该交易所迅速发展成为加密货币交易生态系统中最重要的参与者之一。",
+    "companyDesc2": "截至2025年，Bybit服务于全球数百万用户，并持续位列交易量最大的加密货币交易所之列。该平台专注于加密货币衍生品交易，为各种加密货币提供永续合约、期货、期权和现货交易。",
+    "userStat": "5百万+",
+    "userStatLabel": "注册用户",
+    "volumeStat": "78亿美元",
+    "volumeStatLabel": "日交易量",
+    "cryptoStat": "100+",
+    "cryptoStatLabel": "支持的加密货币",
+    "leadershipTitle": "领导团队",
+    "leadershipDesc1": "Bybit由周本澎（Ben Zhou）创立，他担任CEO。在创立Bybit之前，周本澎曾在外汇和差价合约交易公司XM工作。交易所的领导团队包括来自传统金融、技术和区块链行业背景的高管。",
+    "leadershipDesc2": "该公司在组织结构方面保持相对低调的形象，但随着业务发展，其团队已显著扩大，在世界各地设有办事处。",
+    "evolutionTitle": "发展与成长",
+    "journeyTitle": "Bybit的发展历程",
+    "journeyDesc": "自2018年成立以来，Bybit经历了显著增长，大幅扩展了产品供应和用户基础。该公司出现在加密货币衍生品交易兴趣增加的时期，并通过专注于平台稳定性、流动性和用户体验而脱颖而出。",
+    "timeline": {
+      "event1": {
+        "date": "2018年3月",
+        "title": "Bybit成立",
+        "description": "交易所启动，专注于加密货币衍生品交易。"
+      },
+      "event2": {
+        "date": "2019年",
+        "title": "产品扩展",
+        "description": "引入更多交易对和改进平台功能。"
+      },
+      "event3": {
+        "date": "2020年",
+        "title": "市场增长",
+        "description": "在加密货币市场扩张期间，交易量和用户基础显著增加。"
+      },
+      "event4": {
+        "date": "2021年",
+        "title": "功能扩展",
+        "description": "引入现货交易、更多衍生品产品和附加服务。"
+      },
+      "event5": {
+        "date": "2022-2024年",
+        "title": "全球扩张",
+        "description": "在各司法管辖区持续国际增长和监管合规努力。"
+      }
+    },
+    "marketPositionTitle": "市场地位",
+    "marketPositionDesc": "在安全事件发生前，Bybit已确立自己作为顶级加密货币交易所的地位，尤其以以下方面著称：",
+    "features": {
+      "trading": {
+        "title": "交易基础设施：",
+        "description": "Bybit的撮合引擎能够处理每秒10万笔交易，即使在市场高度波动期间也能提供流畅的交易体验。"
+      },
+      "liquidity": {
+        "title": "流动性：",
+        "description": "该交易所为其最受欢迎的交易对维持深度订单簿，减少交易者的滑点。"
+      },
+      "interface": {
+        "title": "用户界面：",
+        "description": "以其直观的交易平台而闻名，同时满足初学者和高级交易者的需求。"
+      },
+      "support": {
+        "title": "客户支持：",
+        "description": "通过各种渠道提供全天候多语言客户服务。"
+      }
+    },
+    "analystQuote": "Bybit通过专注于衍生品交易卓越性和平台稳定性，在加密货币交易市场展现了显著的增长。他们的发展历程代表了在快速发展的数字资产领域运营的机遇和挑战。",
+    "analystAttribution": "CryptoAnalyticsHub研究，2024年",
+    "securityTitle": "安全态势与实践",
+    "securityInfraTitle": "事件前安全基础设施",
+    "securityInfraDesc": "在黑客攻击之前，Bybit已经实施了各种安全措施来保护用户资金和平台完整性：",
+    "securityMeasures": {
+      "item1": "多重签名钱包，需要多次批准才能进行交易",
+      "item2": "大部分用户资金（估计95%）的冷存储",
+      "item3": "由第三方网络安全公司进行定期安全审计",
+      "item4": "用于检测可疑活动的高级监控系统",
+      "item5": "所有用户账户的双重认证（2FA）"
+    },
+    "regulatoryTitle": "监管合规",
+    "regulatoryDesc": "Bybit通过以下方式应对复杂且不断变化的加密货币交易所监管环境：",
+    "regulatoryCompliance": {
+      "item1": "实施了解您的客户（KYC）和反洗钱（AML）程序",
+      "item2": "在明确禁止加密货币交易的司法管辖区限制服务",
+      "item3": "与各国监管机构合作，确保遵守当地法律",
+      "item4": "在某些司法管辖区获得许可证和注册"
+    },
+    "industryRankTitle": "行业排名与声誉",
+    "industryRankDesc": "在安全事件发生前，Bybit已在加密货币社区建立了强大的声誉：",
+    "industryRank": {
+      "item1": "按交易量计算始终排名前5-10位交易所",
+      "item2": "以在极端市场波动期间的可靠平台性能而闻名",
+      "item3": "积极的社区参与和教育倡议",
+      "item4": "在体育和电子竞技领域的赞助，包括与一级方程式车队的合作伙伴关系"
+    },
+    "securityIncidentDesc": "2025年2月的安全漏洞对Bybit的声誉构成了重大挑战，并对其安全措施的有效性提出了疑问，尽管他们之前在行业中有良好的声誉。"
+  },
+  "hackerProfile": {
+    "title": "黑客画像",
+    "subtitle": "对Bybit交易所漏洞背后威胁行为者的分析",
+    "threatActorAnalysis": "威胁行为者分析",
+    "threatActorAnalysisDesc": "基于对链上活动、交易模式和技术方法的取证分析，安全研究人员已经建立了一个强烈暗示朝鲜民主主义人民共和国（DPRK）国家支持行为者参与的画像，特别是拉撒路组织（Lazarus Group）。所使用的策略、技术和程序（TTPs）与先前归因于朝鲜黑客组织的攻击一致，包括最近对Radiant Capital和WazirX的攻击。",
+    "note": "注意",
+    "noteDesc": "此分析基于来自Chainalysis等区块链取证公司和网络安全研究人员的证据。在持有其他已知朝鲜相关攻击资产的地址中整合被盗资金为归因提供了强有力的证据，尽管与所有网络安全事件一样，随着更多信息的出现，调查结果可能会发展变化。",
+    "technicalSophistication": "技术复杂度评估",
+    "sophisticationDesc": "威胁行为者展示了非凡的技术专业水平，与具有国家支持的高级持续性威胁（APT）组织相符：",
+    "attribute": "属性",
+    "assessment": "评估",
+    "technicalExpertise": "技术专业知识",
+    "expertiseDesc": "高级 - 展示了对冷钱包基础设施、多重签名授权系统和区块链交易机制的深入了解，特别是在'盲签名'（blind signing）攻击方面的专业知识，如在Radiant Capital和WazirX漏洞中所见",
+    "operationalSecurity": "运行安全性",
+    "securityDesc": "复杂 - 采用多种技术掩盖身份和资产流动，与朝鲜相关操作一致",
+    "resources": "资源",
+    "resourcesDesc": "充足 - 操作需要大量规划、时间投入和专业技能团队成员，同时精通社会工程学和技术利用",
+    "motivation": "动机",
+    "motivationDesc": "经济 - 与朝鲜有据可查的加密货币盗窃模式一致，用于逃避制裁和资助国家运作，2024年在多个交易所的盗窃总额超过6.59亿美元",
+    "tacticsTitle": "策略、技术与",
+    "tacticsTitleHighlight": "程序",
+    "tacticsDesc": "对Bybit黑客事件的分析揭示了一个复杂的行动，使用与朝鲜国家支持组织一致的高级策略，特别是拉撒路组织：",
+    "reconTitle": "侦察",
+    "reconDesc": "攻击前对Bybit基础设施、钱包架构和拥有冷钱包签名权限的关键人员进行广泛研究，类似于2023年10月Radiant Capital攻击中使用的方法",
+    "accessTitle": "初始访问",
+    "accessDesc": "针对冷钱包签名者的社会工程学，通过在前端显示合法交易数据同时注入恶意代码来诱使他们签署恶意交易 - 这种'盲签名'技术也用于价值5000万美元的Radiant Capital黑客攻击和价值2.35亿美元的WazirX漏洞",
+    "exfilTitle": "资产窃取",
+    "exfilDesc": "通过多笔未经授权的交易精确提取401,000个ETH，时机选择旨在最大化价值并最小化被发现的可能性，使用复杂的恶意软件拦截批准并中继恶意交易",
+    "launderingTitle": "资金洗钱",
+    "launderingDesc": "通过混币器、跨链桥和转换为隐私币进行复杂洗钱，遵循先前朝鲜网络行动中观察到的模式，将来自各种黑客攻击的资金整合并通过中间地址转移到P2P交易所",
+    "attributionTitle": "归因分析",
+    "attributionDesc1": "Bybit黑客事件中使用的策略和技术与先前归因于朝鲜国家支持黑客的攻击密切匹配，特别是那些与侦察总局（RGB）相关的黑客。美国、日本和韩国的联合声明已确认朝鲜相关行为者对2024年的多起加密货币盗窃负责，包括WazirX黑客攻击。",
+    "attributionDesc2": "根据领先区块链情报公司的分析，通过比较TTP模式与已知威胁行为者，计算出以下相似度评分：",
+    "similarityTitle": "与已知威胁行为者的TTP相似度",
+    "similarityFooter": "来源：Chainalysis和Elliptic分析，2025年2月",
+    "disclaimer": "归因免责声明：",
+    "disclaimerDesc": "虽然证据强烈指向朝鲜相关行为者，但网络空间中的明确归因具有挑战性。此评估代表多家情报公司的共识观点，随着新证据出现可能会更新。",
+    
+    "recentAttacksTitle": "同一行为者的",
+    "recentAttacksTitleHighlight": "近期著名攻击",
+    "recentAttacksDesc": "Bybit黑客事件遵循了归因于拉撒路组织的一系列复杂攻击模式，近期两起备受关注的事件在方法上表现出惊人的相似性：",
+    
+    "radiantAttackTitle": "Radiant Capital黑客攻击（2023年10月）",
+    "radiantAttackDesc": "2023年10月16日，Radiant Capital遭遇安全漏洞，损失约5000万美元。攻击者成功入侵了三名使用硬件钱包的可信开发者，使用复杂的恶意软件注入恶意交易，同时在前端显示合法交易数据。尽管采取了严格的安全程序，但由于恶意软件拦截了交易批准并中继恶意交易，使得在手动审核过程中无法检测到入侵。",
+    "radiantAttackMetrics": "攻击价值：5000万美元 | 日期：2023年10月16日 | 受影响链：Arbitrum和BSC",
+    
+    "wazirxAttackTitle": "WazirX漏洞（2024年7月）",
+    "wazirxAttackDesc": "2024年7月，WazirX交易所遭遇被归因于拉撒路组织的2.35亿美元漏洞。攻击利用了多重签名以太坊交易中的'盲签名'漏洞。盲签名发生在硬件钱包没有完全显示交易详情（如目标地址和代币详情）以供验证时。攻击者可能入侵了托管提供商的基础设施，使他们能够显示看似合法的交易信息，同时执行恶意代码。尽管多个签名者地理位置分散并使用具有标准安全措施的硬件钱包，攻击仍然成功。",
+    "wazirxAttackMetrics": "攻击价值：2.35亿美元 | 日期：2024年7月18日 | 漏洞：多重签名钱包中的盲签名",
+    
+    "attackComparisonTitle": "模式分析",
+    "attackComparisonDesc": "Radiant和WazirX攻击与Bybit漏洞有几个关键相似之处，包括：利用多重签名钱包、使用'盲签名'漏洞、展示合法交易信息同时执行恶意代码的复杂恶意软件，以及绕过标准安全措施。这些模式强烈支持将攻击归因于拉撒路组织，并突显了他们在针对加密货币平台方面不断发展的技术复杂性。"
+  },
+  "assetData": {
+    "title": "被盗资产数据",
+    "subtitle": "Bybit黑客事件中被盗资金的分析和可视化",
+    "tabs": {
+      "overview": "概览",
+      "movement": "资金流动",
+      "addresses": "关键地址"
+    },
+    "overview": {
+      "description": "2025年2月21日，Bybit黑客事件导致约401,000个ETH（价值近15亿美元）被盗。以下是被盗资产、其流动情况以及迄今为止的追回努力的分析，包括通过行业合作已冻结的约4000万美元。",
+      "totalValueStolen": "被盗总价值（美元）",
+      "ethAmount": "以太币数量",
+      "recoveredSoFar": "已追回比例",
+      "distributionTitle": "被盗资产价值分布",
+      "chartDescription": "图1. 按加密货币类型划分的被盗资产明细",
+      "dataSource": "数据来源",
+      "dataSourceDesc": "此分析基于通过Dune Analytics处理的区块链数据。您可以在此查看完整数据集",
+      "here": "这里"
+    },
+    "movement": {
+      "description": "初始盗窃后，被盗资金通过一系列复杂交易转移，旨在掩盖其来源。本部分可视化展示了这些资产随时间的流动情况。",
+      "remainingFundsTitle": "剩余资金随时间变化",
+      "chartDescription": "图2. 已知攻击者钱包中剩余被盗资金的百分比随时间变化",
+      "laundering": "洗钱尝试",
+      "launderingDesc": "区块链分析显示攻击者使用混币服务、跨链桥和去中心化交易所试图将被盗资金转换为其他资产，使追踪变得困难。",
+      "destinationTitle": "攻击者钱包交易活动",
+      "destinationDesc": "图3. 主要攻击者钱包的出站交易数量"
+    },
+    "addresses": {
+      "description": "下表列出了攻击中涉及的主要地址，包括初始提款地址和后续洗钱钱包。",
+      "address": "地址",
+      "role": "角色",
+      "amount": "金额",
+      "status": "状态",
+      "sourceWallet": "来源钱包",
+      "attackerWallet": "攻击者钱包",
+      "mixerService": "混币服务",
+      "exchangeDeposit": "交易所存款",
+      "compromised": "已受损",
+      "tracked": "被追踪",
+      "blacklisted": "已列入黑名单",
+      "frozen": "已冻结",
+      "fullListInfo": "注意：这些地址正被区块链分析公司和执法机构积极监控。接收来自这些地址资金的任何交易所都会被通知。"
+    },
+    "onChainAnalysis": {
+      "title": "链上分",
+      "titleHighlight": "析",
+      "description": "自黑客事件发生以来，区块链分析公司一直在追踪被盗资金的流动。通过分析交易模式和地址聚类，研究人员能够跟踪资产流向，了解攻击者试图洗钱的方式。",
+      "keyFindings": "关键发现",
+      "finding1": "约30%的被盗资金已被发送到已知的加密货币混币服务",
+      "finding2": "价值约1亿美元的资金已被转换为门罗币等隐私币",
+      "finding3": "已多次尝试将资金存入中心化交易所，大部分已被阻止",
+      "finding4": "已利用跨链桥在不同区块链之间转移资产",
+      "finding5": "部分资金仍然静置在攻击者控制的钱包中，可能在等待监管减弱",
+      "updateInfo": "随着检测到新的链上活动，此数据会定期更新。最后更新时间：{{date}}",
+      "dashboardInfo": "要获取最新数据，请查看社区创建的",
+      "dashboardLink": "Dune Analytics 仪表板"
+    }
+  },
+  "footer": {
+    "bybitHack": "Bybit黑客事件",
+    "exchangeInfo": "交易所信息",
+    "resources": "资源",
+    "security": "安全",
+    "copyright": "© 2025 Bybit黑客分析。本网站仅供教育目的，与Bybit没有附属关系。",
+    "disclaimer": "所有信息仅供教育目的。"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+} 

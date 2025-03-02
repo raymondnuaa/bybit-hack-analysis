@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "hackDetails": "Hack Details",
+    "aboutBybit": "About Bybit",
+    "hackerProfile": "Hacker Profile",
+    "stolenAssets": "Stolen Assets"
+  },
+  "home": {
+    "title": "The Bybit Exchange Hack",
+    "subtitle": "An in-depth analysis of one of the most significant cryptocurrency exchange security breaches in recent history",
+    "viewHackDetails": "Hack Details",
+    "viewStolenAssets": "View Stolen Assets",
+    "whatHappened": "What Happened?",
+    "whatHappenedDesc1": "On [date], Bybit, one of the world's largest cryptocurrency exchanges, experienced a significant security breach. Hackers gained unauthorized access to several hot wallets, resulting in the theft of digital assets worth millions of dollars.",
+    "whatHappenedDesc2": "The attack appears to have targeted the exchange's private keys through a sophisticated social engineering and technical exploitation strategy.",
+    "fullDetails": "Full Details",
+    "aboutBybit": "About Bybit",
+    "aboutBybitDesc1": "Bybit is a cryptocurrency exchange established in March 2018 and registered in the British Virgin Islands. It has grown to become one of the largest cryptocurrency derivatives exchanges globally, offering a range of trading products.",
+    "aboutBybitDesc2": "The exchange has a daily trading volume in the billions of dollars and serves customers worldwide.",
+    "learnMore": "Learn More",
+    "hackTimeline": "Hack Timeline",
+    "preAttack": "Pre-Attack",
+    "reconPhase": "Reconnaissance Phase",
+    "reconPhaseDesc": "The threat actors conducted extensive reconnaissance on Bybit's infrastructure and employees, gathering information for the upcoming attack.",
+    "initialBreach": "Initial Breach",
+    "securityCompromise": "Security Compromise",
+    "securityCompromiseDesc": "Attackers gained initial access through a combination of social engineering tactics and exploitation of a vulnerability in the exchange's security infrastructure.",
+    "attackExecution": "Attack Execution",
+    "assetTheft": "Asset Theft",
+    "assetTheftDesc": "With access to private keys, the attackers initiated multiple unauthorized transactions, transferring funds from Bybit's hot wallets to attacker-controlled addresses.",
+    "postBreach": "Post-Breach",
+    "discoveryResponse": "Discovery & Response",
+    "discoveryResponseDesc": "Bybit detected the unusual transactions and implemented emergency protocols, including suspending withdrawals and conducting a security audit.",
+    "impactAnalysis": "Impact Analysis",
+    "financialImpact": "Financial Impact",
+    "financialImpactDesc1": "The hack resulted in the theft of approximately [amount] in various cryptocurrencies, making it one of the largest exchange breaches in recent years.",
+    "financialImpactDesc2": "Detailed blockchain analysis has tracked the movement of these funds as attackers attempt to launder the stolen assets.",
+    "viewAssetData": "View Asset Data",
+    "hackerProfile": "Hacker Profile",
+    "hackerProfileDesc1": "Analysis of the attack methodology and subsequent behavior suggests a highly sophisticated threat actor with extensive knowledge of cryptocurrency exchange infrastructure.",
+    "hackerProfileDesc2": "The techniques used bear similarities to attacks attributed to certain well-known hacking groups.",
+    "hackerAnalysis": "Hacker Analysis"
+  },
+  "hackDetails": {
+    "title": "Bybit Hack Details",
+    "subtitle": "A technical deep dive into the attack vectors and methodologies used",
+    "overview": "Overview",
+    "attackOverview": "Attack Overview",
+    "attackOverviewDesc1": "On [specific date], security researchers and blockchain analysts detected unusual transactions from multiple Bybit hot wallets. What followed was a carefully orchestrated attack that resulted in the theft of approximately [amount] in various cryptocurrencies.",
+    "attackOverviewDesc2": "This page provides a comprehensive breakdown of the attack methodology, from initial reconnaissance to the exfiltration of assets and subsequent laundering attempts.",
+    "keyInsight": "Key Insight",
+    "keyInsightDesc": "Unlike many exchange hacks that exploit software vulnerabilities, the Bybit breach appears to have involved a sophisticated combination of social engineering, possible insider threats, and technical exploitation.",
+    "attackTimeline": "Attack Timeline",
+    "attackTimelineDesc": "The attack unfolded in several distinct phases over the course of [timeframe]:",
+    "technicalBreakdown": "Technical Breakdown",
+    "attackVectors": "Attack Vectors",
+    "attackVectorsDesc": "Based on analysis by cybersecurity firms and blockchain intelligence companies, several primary attack vectors have been identified:",
+    "securityImplications": "Security Implications",
+    "lessonsForIndustry": "Lessons for the Industry",
+    "bybitResponse": "Bybit's Response",
+    "bybitResponseQuote": "We take full responsibility for this security incident and are working around the clock to recover funds and improve our security infrastructure. No Bybit user will lose assets as a result of this incident.",
+    "industryImpact": "Industry Impact",
+    "industryImpactDesc": "Following the Bybit hack, several other major exchanges announced security audits and enhancements to their own infrastructure, indicating a ripple effect across the industry.",
+    "ongoingInvestigation": "Ongoing Investigation",
+    "ongoingInvestigationDesc1": "As of the time of writing, investigations into the full scope of the attack continue. Blockchain analysis firms continue to track the movement of stolen funds, and law enforcement agencies are pursuing several leads regarding the identity of the attackers.",
+    "ongoingInvestigationDesc2": "This page will be updated as new information becomes available about the technical details of the attack, recovery efforts, and potential attribution to specific threat actors."
+  },
+  "bybitInfo": {
+    "title": "About Bybit",
+    "subtitle": "Background information on one of the world's largest cryptocurrency exchanges",
+    "companyOverview": "Company Overview",
+    "companyOverviewDesc1": "Bybit is a cryptocurrency derivatives exchange established in March 2018. Headquartered in Singapore and registered in the British Virgin Islands, the exchange has rapidly grown to become one of the most significant players in the cryptocurrency trading ecosystem.",
+    "companyOverviewDesc2": "As of [current year], Bybit serves millions of users worldwide and consistently ranks among the top cryptocurrency exchanges by trading volume. The platform specializes in cryptocurrency derivatives trading, offering perpetual contracts, futures, options, and spot trading for a wide range of cryptocurrencies.",
+    "registeredUsers": "Registered Users",
+    "dailyTradingVolume": "Daily Trading Volume",
+    "supportedCryptocurrencies": "Supported Cryptocurrencies",
+    "leadership": "Leadership",
+    "leadershipDesc1": "Bybit was founded by Ben Zhou, who serves as the CEO. Prior to founding Bybit, Zhou worked at XM, a forex and CFD trading company. The exchange's leadership team includes executives with backgrounds in traditional finance, technology, and blockchain industries.",
+    "leadershipDesc2": "The company maintains a relatively private profile regarding its organizational structure, but has expanded its team significantly as it has grown, with offices in various locations around the world.",
+    "evolution": "Evolution & Growth",
+    "bybitJourney": "Bybit's Journey",
+    "bybitJourneyDesc": "Since its launch in 2018, Bybit has experienced remarkable growth, expanding its product offerings and user base significantly. The company emerged during a period of increased interest in cryptocurrency derivatives trading and distinguished itself through a focus on platform stability, liquidity, and user experience."
+  },
+  "hackerProfile": {
+    "title": "Hacker Profile",
+    "subtitle": "Analysis of the threat actors behind the Bybit exchange breach",
+    "threatActorAnalysis": "Threat Actor Analysis",
+    "threatActorAnalysisDesc": "Based on forensic analysis of on-chain activities, transaction patterns, and technical methodology, security researchers have developed a partial profile of the threat actors responsible for the Bybit hack. While the specific identities remain unknown, significant insights have emerged regarding their technical capabilities, operational patterns, and potential affiliations.",
+    "note": "Note",
+    "noteDesc": "This analysis is based on available evidence and expert assessment from blockchain forensics firms and cybersecurity researchers. Attribution in cybersecurity incidents is complex and findings may evolve as more information becomes available.",
+    "technicalSophistication": "Technical Sophistication Assessment"
+  },
+  "assetData": {
+    "title": "Stolen Assets Data",
+    "subtitle": "Analysis and visualization of funds taken during the Bybit hack",
+    "tabs": {
+      "overview": "Overview",
+      "movement": "Fund Movement",
+      "addresses": "Key Addresses"
+    },
+    "overview": {
+      "description": "The Bybit hack resulted in the theft of multiple cryptocurrencies across several blockchain networks. Below is a breakdown of the stolen assets and their approximate value at the time of the hack."
+    }
+  },
+  "footer": {
+    "bybitHack": "Bybit Hack",
+    "exchangeInfo": "Exchange Info",
+    "resources": "Resources",
+    "security": "Security",
+    "copyright": "© 2024 Bybit Hack Analysis. This is an educational site and not affiliated with Bybit.",
+    "disclaimer": "All information is provided for educational purposes only."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+} 

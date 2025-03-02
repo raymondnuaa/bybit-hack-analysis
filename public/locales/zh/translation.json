@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "overview": "概览",
+    "hackDetails": "黑客详情",
+    "aboutBybit": "关于Bybit",
+    "hackerProfile": "黑客画像",
+    "stolenAssets": "被盗资产"
+  },
+  "home": {
+    "title": "Bybit交易所黑客事件",
+    "subtitle": "对近期最重大的加密货币交易所安全漏洞之一的深入分析",
+    "viewHackDetails": "黑客详情",
+    "viewStolenAssets": "查看被盗资产",
+    "whatHappened": "发生了什么？",
+    "whatHappenedDesc1": "在[日期]，全球最大的加密货币交易所之一Bybit遭遇了重大安全漏洞。黑客未经授权访问了多个热钱包，导致价值数百万美元的数字资产被盗。",
+    "whatHappenedDesc2": "攻击似乎通过复杂的社会工程学和技术利用策略针对交易所的私钥。",
+    "fullDetails": "完整详情",
+    "aboutBybit": "关于Bybit",
+    "aboutBybitDesc1": "Bybit是一家成立于2018年3月并注册在英属维尔京群岛的加密货币交易所。它已成长为全球最大的加密货币衍生品交易所之一，提供多种交易产品。",
+    "aboutBybitDesc2": "该交易所每日交易量达数十亿美元，服务全球客户。",
+    "learnMore": "了解更多",
+    "hackTimeline": "黑客时间线",
+    "preAttack": "攻击前",
+    "reconPhase": "侦察阶段",
+    "reconPhaseDesc": "威胁行为者对Bybit的基础设施和员工进行了广泛的侦察，为即将到来的攻击收集信息。",
+    "initialBreach": "初始入侵",
+    "securityCompromise": "安全受损",
+    "securityCompromiseDesc": "攻击者通过社会工程学战术和交易所安全基础设施漏洞的组合获得了初始访问权限。",
+    "attackExecution": "攻击执行",
+    "assetTheft": "资产盗窃",
+    "assetTheftDesc": "获得私钥访问权后，攻击者发起了多笔未经授权的交易，将资金从Bybit的热钱包转移到攻击者控制的地址。",
+    "postBreach": "漏洞后",
+    "discoveryResponse": "发现与响应",
+    "discoveryResponseDesc": "Bybit检测到异常交易并实施了紧急协议，包括暂停提款和进行安全审计。",
+    "impactAnalysis": "影响分析",
+    "financialImpact": "财务影响",
+    "financialImpactDesc1": "黑客事件导致约[金额]的各类加密货币被盗，使其成为近年来最大的交易所漏洞之一。",
+    "financialImpactDesc2": "详细的区块链分析已追踪这些资金的流动，因为攻击者试图洗钱被盗资产。",
+    "viewAssetData": "查看资产数据",
+    "hackerProfile": "黑客画像",
+    "hackerProfileDesc1": "对攻击方法和后续行为的分析表明，这是一个具有丰富加密货币交易所基础设施知识的高度复杂的威胁行为者。",
+    "hackerProfileDesc2": "所使用的技术与归因于某些知名黑客组织的攻击有相似之处。",
+    "hackerAnalysis": "黑客分析"
+  },
+  "hackDetails": {
+    "title": "Bybit黑客详情",
+    "subtitle": "对攻击向量和所用方法的技术深入分析",
+    "overview": "概览",
+    "attackOverview": "攻击概述",
+    "attackOverviewDesc1": "在[具体日期]，安全研究人员和区块链分析师检测到来自多个Bybit热钱包的异常交易。随后发生的是一次精心策划的攻击，导致约[金额]的各类加密货币被盗。",
+    "attackOverviewDesc2": "本页提供了从初始侦察到资产外泄和随后洗钱尝试的攻击方法的全面分析。",
+    "keyInsight": "关键见解",
+    "keyInsightDesc": "与许多利用软件漏洞的交易所黑客不同，Bybit漏洞似乎涉及社会工程学、可能的内部威胁和技术利用的复杂组合。",
+    "attackTimeline": "攻击时间线",
+    "attackTimelineDesc": "攻击在[时间段]内分几个不同阶段展开：",
+    "technicalBreakdown": "技术分析",
+    "attackVectors": "攻击向量",
+    "attackVectorsDesc": "根据网络安全公司和区块链情报公司的分析，已确定几个主要攻击向量：",
+    "securityImplications": "安全意义",
+    "lessonsForIndustry": "行业经验教训",
+    "bybitResponse": "Bybit的响应",
+    "bybitResponseQuote": "我们对这一安全事件承担全部责任，并正夜以继日地努力追回资金并改善我们的安全基础设施。由于这一事件，Bybit用户将不会损失资产。",
+    "industryImpact": "行业影响",
+    "industryImpactDesc": "在Bybit黑客事件后，其他几家主要交易所宣布了安全审计和对自身基础设施的增强，表明整个行业受到了连锁反应。",
+    "ongoingInvestigation": "进行中的调查",
+    "ongoingInvestigationDesc1": "在撰写本文时，对攻击全部范围的调查仍在继续。区块链分析公司继续追踪被盗资金的流动，执法机构正在追查有关攻击者身份的多条线索。",
+    "ongoingInvestigationDesc2": "随着有关攻击技术细节、追回努力和可能归因于特定威胁行为者的新信息可用，本页将进行更新。"
+  },
+  "bybitInfo": {
+    "title": "关于Bybit",
+    "subtitle": "全球最大加密货币交易所之一的背景信息",
+    "companyOverview": "公司概览",
+    "companyOverviewDesc1": "Bybit是一家成立于2018年3月的加密货币衍生品交易所。总部位于新加坡并注册在英属维尔京群岛，该交易所迅速发展成为加密货币交易生态系统中最重要的参与者之一。",
+    "companyOverviewDesc2": "截至[当前年份]，Bybit服务全球数百万用户，在交易量方面始终位居加密货币交易所前列。该平台专注于加密货币衍生品交易，为各种加密货币提供永续合约、期货、期权和现货交易。",
+    "registeredUsers": "注册用户",
+    "dailyTradingVolume": "日交易量",
+    "supportedCryptocurrencies": "支持的加密货币",
+    "leadership": "领导层",
+    "leadershipDesc1": "Bybit由周本担任CEO创立。在创立Bybit之前，周在外汇和差价合约交易公司XM工作。交易所的领导团队包括具有传统金融、技术和区块链行业背景的高管。",
+    "leadershipDesc2": "该公司对其组织结构保持相对私密的状态，但随着发展已显著扩大了团队，在世界各地设有办事处。",
+    "evolution": "演变与增长",
+    "bybitJourney": "Bybit的旅程",
+    "bybitJourneyDesc": "自2018年推出以来，Bybit经历了显著增长，大幅扩展了产品种类和用户基础。该公司在加密货币衍生品交易兴趣增加的时期崛起，通过专注于平台稳定性、流动性和用户体验而脱颖而出。"
+  },
+  "hackerProfile": {
+    "title": "黑客画像",
+    "subtitle": "对Bybit交易所漏洞背后威胁行为者的分析",
+    "threatActorAnalysis": "威胁行为者分析",
+    "threatActorAnalysisDesc": "基于对链上活动、交易模式和技术方法的取证分析，安全研究人员已对负责Bybit黑客事件的威胁行为者建立了部分画像。虽然具体身份仍未知，但关于他们的技术能力、操作模式和潜在关联已经浮出水面。",
+    "note": "注意",
+    "noteDesc": "此分析基于可用证据和区块链取证公司与网络安全研究人员的专家评估。网络安全事件中的归因很复杂，随着更多信息的出现，调查结果可能会发展变化。",
+    "technicalSophistication": "技术复杂度评估"
+  },
+  "assetData": {
+    "title": "被盗资产数据",
+    "subtitle": "Bybit黑客事件中被盗资金的分析和可视化",
+    "tabs": {
+      "overview": "概览",
+      "movement": "资金流动",
+      "addresses": "关键地址"
+    },
+    "overview": {
+      "description": "Bybit黑客事件导致多个区块链网络上的多种加密货币被盗。以下是被盗资产及其在黑客事件发生时的大致价值分析。"
+    }
+  },
+  "footer": {
+    "bybitHack": "Bybit黑客事件",
+    "exchangeInfo": "交易所信息",
+    "resources": "资源",
+    "security": "安全",
+    "copyright": "© 2024 Bybit黑客分析。本网站仅供教育目的，与Bybit没有附属关系。",
+    "disclaimer": "所有信息仅供教育目的。"
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+} 
